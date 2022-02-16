@@ -9,7 +9,7 @@ Esse projeto foi desenvolvido para colocar em prática meus conhecimentos me Jav
 * Demo: [Clique aqui para ver esse projeto](https://leandrorafaeel.github.io/jogodavelha-js/)
 
 <div align="left">
-    <img src="assets/img/jogo.png" width="100%">
+    <img src="assets/jogo.png" width="100%">
 </div>
 
 ## Tecnologias:
