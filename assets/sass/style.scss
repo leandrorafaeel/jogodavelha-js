@@ -1,0 +1,155 @@
+@use 'variaveis';
+@use 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    color: variaveis.$dark-color;
+    @include mixins.center-content;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+#cabecalho{
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .btn-jogar{
+        padding: 15px;
+        border: none;
+        margin: 30px auto;
+        cursor: pointer;
+    }
+    .jogadores{
+        position: absolute;
+        left: 50px;
+        margin-bottom: 45px;
+      
+        h3{
+            font-weight: 300;
+        }
+    
+        .jogador-1{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            span{
+                color: variaveis.$red;
+                font-weight: 900;
+                font-size: 1.2rem;
+                margin-left: 15px;
+            }
+        }
+    
+        .jogador-2{
+            display: flex;
+            align-items: center;
+    
+            span{
+                @include mixins.circulo;
+                color: variaveis.$red;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+#jogo{
+    #jogo-container{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 45px;
+    
+        .box{
+            height: 110px;
+            border: 5px solid variaveis.$dark-color;
+            flex: 1 1 30%;
+        }
+        
+        #block-1, #block-2, #block-3{
+            border-top: none;
+        }
+        #block-1, #block-4, #block-7{
+            border-left: none;
+        }
+        #block-3, #block-6, #block-9{
+            border-right: none;
+        }
+        #block-7, #block-8, #block-9{
+            border-bottom: none;
+        }
+    }
+
+    #placar{
+        h3{
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        .score{
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            justify-content: center;
+            font-weight: 900;
+
+            &-x{
+                color: variaveis.$red;    
+                margin-right: 10px     
+            }
+            .placar-1{
+                margin-left: 10px
+            }
+            &-o{
+                @include mixins.circulo;
+                border-width: 4px;
+                height: 20px;
+                width: 20px;
+                margin-left: 45px;
+                margin-right: 10px;
+            }
+            .placar-2{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.o{
+    @include mixins.circulo;
+    height: 52px;
+    width: 52px;
+    border-width: 6px;
+    display: inline-block;
+    margin-top: 22px;
+
+}
+.x{
+    color: variaveis.$red;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.mensagem{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    top: 210px;
+    width: 450px;
+    padding: 40px 30px;
+    font-size: 2rem;
+    background-color: variaveis.$dark-color;
+    color: #fff;
+}
+.hide{
+    display: none;
+}

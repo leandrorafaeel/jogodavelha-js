@@ -1,0 +1,15 @@
+@mixin center-content(){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+@mixin circulo(){
+    width: 18px;
+    height: 18px;
+    border: 3px solid green;
+    border-radius: 50%;
+}

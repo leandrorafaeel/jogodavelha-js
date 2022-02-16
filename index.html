@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Leandro Rafael">
+        <title>Jogo da Velha</title>
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body> 
+        <!-- CABECALHO -->
+        <header id="cabecalho">
+            <h1>Jogo da Velha</h1>
+
+            <button class="btn-jogar">Começar o Jogo</button>
+
+            <div class="jogadores hide">
+                <div class="jogador-1">
+                    <h3>Jogador 1: </h3> <span>X</span>
+                </div>
+               <div class="jogador-2">
+                    <h3>Jogador 2: </h3> <span></span>
+               </div>
+            </div>
+        </header>
+
+        <!-- JOGO DA VELHA -->
+        <section id="jogo" class="hide">
+            <div id="jogo-container">
+                <div class="box" id="block-1"></div>
+                <div class="box" id="block-2"></div>
+                <div class="box" id="block-3"></div>
+                <div class="box" id="block-4"></div>
+                <div class="box" id="block-5"></div>
+                <div class="box" id="block-6"></div>
+                <div class="box" id="block-7"></div>
+                <div class="box" id="block-8"></div>
+                <div class="box" id="block-9"></div>
+            </div>
+
+            <!-- PLACAR -->
+            <div id="placar">
+                <h3>Placar:</h3>
+                <div class="score">
+                    <span class="score-x">X</span> : <span class="placar-1">0</span>
+                    <span class="score-o"></span> : <span class="placar-2">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOGADORES -->
+        <div class="hide">
+            <span class="x">X</span>
+            <span class="o"></span>
+        </div>
+
+        <!-- MENSAGEM DE VENCEDOR -->
+        <div class="mensagem hide">
+            <p></p>
+        </div>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
