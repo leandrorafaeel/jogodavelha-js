@@ -4,7 +4,7 @@
 
 </div>
 
-Esse projeto foi desenvolvido para colocar em prática meus conhecimentos me Javascript moderno
+Esse projeto foi desenvolvido para colocar em prática meus conhecimentos em Javascript e SASS
 
 * Demo: [Clique aqui para ver esse projeto](https://leandrorafaeel.github.io/jogodavelha-js/)
 
